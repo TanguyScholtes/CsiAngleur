@@ -1,0 +1,410 @@
+/*--- Wordpress Theme informations ---*/
+/*
+Theme Name: CSI Angleur
+Theme URI:
+Author: Tanguy Scholtes
+Author URI: https://tanguyscholtes.be/
+Description: A Wordpress theme tailored for CSI Angleur
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: csi, angleur, maison, soin
+Text Domain: csiangleur
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*--- Resets ---*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*--- Fonts import ---*/
+/*--- Fonts import ---*/
+@font-face {
+  font-family: "Muli";
+  src: url("./fonts/Muli-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("./fonts/Philosopher-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("./fonts/Philosopher-Bold.ttf") format("truetype"); }
+
+/*--- Base styles ---*/
+/*--- Base styles ---*/
+html {
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: "Philosopher"; }
+
+h1 {
+  font-size: 2em;
+  margin: 1em 0; }
+
+h2 {
+  font-size: 1.75em;
+  margin: 1em 0; }
+
+h3 {
+  font-size: 1.5em;
+  margin: 1em 0; }
+
+p {
+  margin: 1em 0;
+  line-height: 1.5em; }
+
+  strong{
+      font-weight: bold;
+  }
+
+  li{
+      line-height: 1.5em;
+      margin: 0.5em 0;
+  }
+
+/*--- Variables ---*/
+/*--- Colors ---*/
+/*--- Main styles ---*/
+html {
+  color: #1e1e1e;
+  background-color: #ebebeb;
+  font-family: "Muli", "Open Sans", "Helvetica Neue", Helvetica, Arial sans-serif; }
+
+.title{
+    color: #cc1822;
+}
+
+.content-link {
+  color: #cc1822;
+  font-weight: bold;
+  -webkit-transition: color 500ms ease;
+  transition: color 500ms ease; }
+  .content-link:hover {
+    color: #9e131a;
+    -webkit-transition: color 500ms ease;
+    transition: color 500ms ease; }
+
+.main, .homepage-main {
+  margin: 0 auto;
+  padding: 1.5em; }
+
+.main {
+  width: 40em; }
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*--- Partials ---*/
+.site-title {
+  margin: 0; }
+
+.site-title--link {
+  display: block;
+  width: 1600px;
+  height: 300px;
+  background-image: url("./img/banner.png");
+  text-indent: -9999px; }
+
+.gmap{
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.gmap-home{
+    width: 300px;
+    height: 300px;
+}
+
+/*--- Navigation ---*/
+.navigation-wrapper {
+  width: 100%;
+  background-color: #ebebeb;
+  border-bottom: 2px solid #cc1822; }
+
+.site-description, .secondary-toggle {
+  display: none; }
+
+.sidebar {
+  position: relative !important; }
+
+.navigation {
+  width: 80%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: right; }
+
+.navigation .nav-menu{
+
+}
+
+.navigation .menu-item{
+    display: inline-block;
+    margin: 0;
+}
+
+.navigation .menu-item a {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #ebebeb;
+  color: #1e1e1e;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 500ms ease, color 500ms ease;
+  transition: background-color 500ms ease, color 500ms ease; }
+.navigation .menu-item a:hover {
+    background-color: #cc1822;
+    color: white;
+    -webkit-transition: background-color 500ms ease, color 500ms ease;
+    transition: background-color 500ms ease, color 500ms ease; }
+
+.active {
+  background-color: #cc1822;
+  color: white; }
+
+/*--- Footer ---*/
+.footer-wrapper {
+  width: 100%;
+  background-color: #737373; }
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+  color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.footer-title {
+  margin-top: 0; }
+
+.vcard {
+  text-align: center; }
+  .vcard h3 {
+    margin-bottom: 0.5em; }
+  .vcard p {
+    margin: 0.25em 0; }
+
+.footer-link {
+  font-weight: bold;
+  color: #9e131a;
+  -webkit-transition: color 500ms ease;
+  transition: color 500ms ease; }
+  .footer-link:hover {
+    color: #710d13;
+    -webkit-transition: color 500ms ease;
+    transition: color 500ms ease; }
+
+.footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-form input[type="email"]{
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  margin-right: 1em; }
+
+.footer-form input[type="submit"]{
+  padding: 0.5em 1em;
+  font-weight: bold;
+  background-color: #d23214 !important;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #751c0b !important;
+  border-radius: 1em;
+  -webkit-transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease;
+  transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease; }
+  .footer-button:hover {
+    background-color: #a32710;
+    color: #ebebeb;
+    border-bottom: 2px solid #751c0b;
+    -webkit-transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease;
+    transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease; }
+
+.siteplan ul {
+  font-weight: bold;
+  font-size: 1.5em; }
+
+.siteplan li {
+  line-height: 1.5em;
+  margin-bottom: 0.25em; }
+
+.siteplan a {
+  color: #ebebeb;
+  text-decoration: none;
+  background-color: transparent !important;
+  -webkit-transition: color 500ms ease, text-decoration 500ms ease;
+  transition: color 500ms ease, text-decoration 500ms ease; }
+  .siteplan a:hover {
+    color: white;
+    text-decoration: underline;
+    -webkit-transition: color 500ms ease, text-decoration 500ms ease;
+    transition: color 500ms ease, text-decoration 500ms ease; }
+
+.social-container {
+  margin: 3em 0; }
+
+.social {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.social-link {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  background-size: contain;
+  -webkit-transition: opacity 500ms ease, box-shadow 500ms ease;
+  transition: opacity 500ms ease, box-shadow 500ms ease;
+  border-radius: 2em; }
+  .social-link:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0.9;
+    -webkit-transition: opacity 500ms ease, box-shadow 500ms ease;
+    transition: opacity 500ms ease, box-shadow 500ms ease; }
+
+.facebook-link {
+  background-image: url("./img/facebook-logo.png"); }
+
+.twitter-link {
+  background-image: url("./img/twitter-logo.png"); }
+
+.homepage-main{
+    width: 80%;
+    max-width: 1024px;
+}
+
+.double-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 2em 0;
+}
+
+.column {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 48%;
+  text-align: justify;
+    vertical-align: middle;
+}
+
+.img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.img-link {
+  width: 250px;
+  height: 250px;
+  background-image: url("./img/house-mini.jpg");
+  background-size: contain;
+  text-indent: -9999px;
+}
+.img-link, .img{
+    display: block;
+    margin: 0 auto;
+}
+
+.img-link, .gmap, .img{
+    border: 2px solid #cc1822;
+    border-radius: 1em;
+}
+
+.button {
+  text-align: center;
+  margin: 2em 0; }
+
+.button-link {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1.25em;
+  font-weight: bold;
+  background-color: #cc1822;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #710d13;
+  border-radius: 0.5em;
+  -webkit-transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease;
+  transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease; }
+  .button-link:hover {
+    background-color: #9e131a;
+    color: #ebebeb;
+    border-bottom: 2px solid #43080b;
+    -webkit-transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease;
+    transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease; }
