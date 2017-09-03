@@ -118,7 +118,7 @@ html {
   background-color: #ebebeb;
   font-family: "Muli", "Open Sans", "Helvetica Neue", Helvetica, Arial sans-serif; }
 
-.title{
+.title, .page-title{
     color: #cc1822;
 }
 
