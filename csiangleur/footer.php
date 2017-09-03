@@ -32,7 +32,7 @@
             <div class="right-column">
                 <section class="social-container">
                     <h3 class="hidden">Réseaux sociaux</h3>
-                    <p class="social">Suivez-nous sur <a class="facebook-link social-link" href="http://www.facebook.com">Facebook</a> <a class="twitter-link social-link" href="https://twitter.com/">Twitter</a></p>
+                    <p class="social">Suivez-nous sur <span class="social-link-wrapper"><a class="facebook-link social-link" href="http://www.facebook.com">Facebook</a> <a class="twitter-link social-link" href="https://twitter.com/">Twitter</a></span></p>
                 </section>
 
                 <section id="hcard-Maison-médicale-Angleur-ASBL" class="vcard">
