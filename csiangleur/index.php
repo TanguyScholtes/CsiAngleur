@@ -24,7 +24,7 @@ get_header(); ?>
 		<h2 class="hidden">Présentation</h2>
 		<div class="column">
 			<p class="img-wrapper">
-				<a class="img-link" href="img/house.png" alt="La Maison médicale d'Angleur">La Maison médicale d'Angleur</a>
+				<a class="img-link" href="<?php echo get_bloginfo('template_url') ?>/img/house.png" alt="La Maison médicale d'Angleur">La Maison médicale d'Angleur</a>
 			</p>
 		</div>
 		<div class="column">

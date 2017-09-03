@@ -110,6 +110,11 @@ p {
       margin: 0.5em 0;
   }
 
+label{
+    font-weight: bold;
+    margin-right: 1em;
+}
+
 /*--- Variables ---*/
 /*--- Colors ---*/
 /*--- Main styles ---*/
@@ -159,6 +164,9 @@ a, .content-link:hover{
   width: 1600px;
   height: 300px;
   background-image: url("./img/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
   text-indent: -9999px; }
 
 .gmap{
@@ -305,11 +313,12 @@ a, .content-link:hover{
     transition: color 500ms ease, text-decoration 500ms ease; }
 
 .social-container {
-  margin: 3em 0; }
+  margin: 0 0 3em 0; }
 
 .social {
   font-size: 1.5em;
   font-weight: bold;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,11 +377,13 @@ a, .content-link:hover{
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  justify-content: space-around;
+  margin: 0;
+}
 
 .img-link {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background-image: url("./img/house-mini.jpg");
   background-size: contain;
   text-indent: -9999px;
@@ -409,3 +420,12 @@ a, .content-link:hover{
     border-bottom: 2px solid #43080b;
     -webkit-transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease;
     transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease; }
+
+@media screen and ( min-width: 600px ) {
+    /*Medium screen (tablets)*/
+
+}
+@media screen and ( min-width: 1024px ) {
+    /*Large screen (desktop)*/
+
+}
