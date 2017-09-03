@@ -122,12 +122,12 @@ html {
     color: #cc1822;
 }
 
-.content-link {
+a, .content-link{
   color: #cc1822;
   font-weight: bold;
   -webkit-transition: color 500ms ease;
   transition: color 500ms ease; }
-  .content-link:hover {
+a, .content-link:hover{
     color: #9e131a;
     -webkit-transition: color 500ms ease;
     transition: color 500ms ease; }
@@ -137,7 +137,8 @@ html {
   padding: 1.5em; }
 
 .main {
-  width: 40em; }
+  max-width: 40em;
+  text-align: justify; }
 
 .hidden {
   border: 0;
